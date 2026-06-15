@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahjanand Engicon Workflow</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f3f3f3;
+}
+
+.workflow-section{
+padding:100px 5%;
+background:#efefef;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.workflow-section:before{
+content:"";
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:180px;
+background:linear-gradient(to top,#d9d9d9,transparent);
+opacity:.5;
+}
+
+.small-title{
+color:#f57c00;
+font-size:18px;
+font-weight:600;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.main-title{
+font-size:50px;
+font-weight:800;
+margin-bottom:70px;
+color:#111;
+}
+
+.workflow{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.step{
+width:200px;
+}
+
+.number{
+position:absolute;
+top:-10px;
+left:-10px;
+width:40px;
+height:40px;
+background:#fff;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:700;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.hexagon{
+width:180px;
+height:180px;
+margin:auto;
+position:relative;
+clip-path:polygon(
+25% 5%,
+75% 5%,
+100% 50%,
+75% 95%,
+25% 95%,
+0% 50%
+);
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.hexagon img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.hexagon:hover img{
+transform:scale(1.1);
+}
+
+.step h3{
+margin-top:20px;
+font-size:22px;
+font-weight:700;
+color:#111;
+}
+
+.step p{
+margin-top:10px;
+font-size:14px;
+color:#666;
+}
+
+.arrow{
+font-size:45px;
+font-weight:bold;
+color:#f57c00;
+}
+
+.btn{
+display:inline-block;
+margin-top:60px;
+padding:15px 40px;
+background:#f57c00;
+color:#fff;
+text-decoration:none;
+font-size:18px;
+font-weight:600;
+border-radius:4px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#d96c00;
+}
+
+@media(max-width:1200px){
+
+.workflow{
+flex-direction:column;
+}
+
+.arrow{
+transform:rotate(90deg);
+}
+
+.main-title{
+font-size:36px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="workflow-section">
+
+<div class="small-title">
+OUR WORKFLOW
+</div>
+
+<h2 class="main-title">
+PHASES OF PROJECT EXECUTION
+</h2>
+
+<div class="workflow">
+
+<div class="step">
+
+<div class="hexagon">
+<div class="number">01</div>
+
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80">
+</div>
+
+<h3>Project Survey</h3>
+
+<p>
+Site inspection and project requirement analysis.
+</p>
+
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="step">
+
+<div class="hexagon">
+<div class="number">02</div>
+
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80">
+</div>
+
+<h3>Design & Planning</h3>
+
+<p>
+Engineering drawings and execution planning.
+</p>
+
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="step">
+
+<div class="hexagon">
+<div class="number">03</div>
+
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80">
+</div>
+
+<h3>Execution</h3>
+
+<p>
+Electrical, MEP and infrastructure implementation.
+</p>
+
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="step">
+
+<div class="hexagon">
+<div class="number">04</div>
+
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80">
+</div>
+
+<h3>Quality & Safety</h3>
+
+<p>
+Testing, inspection and safety compliance.
+</p>
+
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="step">
+
+<div class="hexagon">
+<div class="number">05</div>
+
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=600&q=80">
+</div>
+
+<h3>Project Handover</h3>
+
+<p>
+Final delivery and long-term support.
+</p>
+
+</div>
+
+</div>
+
+<a href="contact.html" class="btn">
+Get In Touch
+</a>
+
+</section>
+
+</body>
+</html>
